@@ -11,6 +11,10 @@
 async function startProgram() {
 	await roll((getHeading() + 0), 60, 1.55);
 	await delay(1);
+//Check point 2
+//Programmer 2: laDanien Shelton
+	await roll((getHeading() + 90), 60, 1.3);
+    await delay(1);
 
 
 
