@@ -19,6 +19,7 @@ async function startProgram() {
 
 
 }
+*/
 
  // ---------------------------------------------------------------
 
@@ -28,6 +29,11 @@ async function startProgram() {
 async function startProgram() {
 	setMainLed({ r: 225, g: 0, b: 0 });
 	await roll((getHeading() + 0), 60, 2.7);
+	await delay(1);
+	// Preston Simmons - PC #16 - Checkpoint two - blue + Sound
+	await Sound.Menu.Accept.play(true);
+	setMainLed({ r: 0, g: 0, b: 225 });
+	await roll((getHeading() + 90), 60, 1.3);
 	await delay(1);
 	
 } 
