@@ -22,4 +22,12 @@ async function startProgram() {
 
  // ---------------------------------------------------------------
 
-// New Maze #2 
+// New Maze #2  
+
+// LaDanien Shelton - PC # 15 - Checkpoint one - Red 
+async function startProgram() {
+	setMainLed({ r: 225, g: 0, b: 0 });
+	await roll((getHeading() + 0), 60, 2.7);
+	await delay(1);
+	
+} 
