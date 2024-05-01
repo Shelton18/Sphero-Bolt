@@ -18,11 +18,16 @@ async function startProgram() {
 	
 	setMainLed({ r: 0, g: 0, b: 255});
 	await roll((getHeading() + 0), 60, 2.7);
+
+
+	 //Programmer:Preston Simmons - Sound One Checkpoint Commit - Date: 05/05/24
+	await roll((getHeading() + 90), 60, 1.7);
+	await delay(1);
+	await Sound.Menu.Accept.play(true);
+
    
 }
 
-
-   //Programmer:           - Sound One Checkpoint Commit - Date:
 
 
 
