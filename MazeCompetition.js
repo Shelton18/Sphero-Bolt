@@ -34,7 +34,7 @@ async function startProgram() {
 	 await delay(1);
 
 
-	 
+
     //Programmer: laDanien Shelton - Sound Two Checkpoint Commit - Date: 05/20/2024
 	 setMainLed({ r: 225, g: 0, b: 0});
 	 await delay(3);
@@ -46,6 +46,14 @@ async function startProgram() {
 	 await roll((getHeading() - 90), 60, 1.2);
 	 await delay(1)
 	 await roll((getHeading() + 90), 60, 0.9);
+
+	 
+	// Programmer LaDanien Shelton - Green LED Checkpoint Commit - Date: 05/20/2024
+
+     await delay(1)
+	 setMainLed({ r: 0, g: 225, b: 0});
+	 await delay(3);
+	 await roll((getHeading() + 35), 50, 0.7);
 
    
 }
