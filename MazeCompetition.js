@@ -25,6 +25,14 @@ async function startProgram() {
 	await delay(1);
 	await Sound.Menu.Accept.play(true);
 
+
+	// Programmer:LaDanien Shelton -Checkpoint Commit - Date: 05/01/24
+	
+	 await roll((getHeading() + 90), 60, 1.3);
+	 await delay(1);
+	 await roll((getHeading() + 45), 57, 1.1);
+	 await delay(1);
+
    
 }
 
