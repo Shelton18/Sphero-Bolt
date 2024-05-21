@@ -33,6 +33,20 @@ async function startProgram() {
 	 await roll((getHeading() + 45), 57, 1.1);
 	 await delay(1);
 
+
+	 
+    //Programmer: laDanien Shelton - Sound Two Checkpoint Commit - Date: 05/20/2024
+	 setMainLed({ r: 225, g: 0, b: 0});
+	 await delay(3);
+	 setMainLed({ r:  0, g: 0, b: 0});
+	 await roll((getHeading() - 90), 50, 1.3);
+	 await delay(3);
+	 await Sound.EightBit.PowerDown.play(true);
+	 await delay(1)
+	 await roll((getHeading() - 90), 60, 1.2);
+	 await delay(1)
+	 await roll((getHeading() + 90), 60, 0.9);
+
    
 }
 
